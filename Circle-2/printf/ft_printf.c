@@ -6,7 +6,7 @@
 /*   By: aait-our <aait-our@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 00:51:47 by aait-our          #+#    #+#             */
-/*   Updated: 2024/11/14 03:26:20 by aait-our         ###   ########.fr       */
+/*   Updated: 2024/11/14 03:41:27 by aait-our         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int	while_format(const char *format, va_list args, int *count)
 	int	i;
 
 	i = 0;
-	if(format[i] == '%' && format[i + 1] == '\0')
+	if (format[i] == '%' && format[i + 1] == '\0')
 		return (-1);
 	while (format[i])
 	{
