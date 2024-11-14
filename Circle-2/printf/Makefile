@@ -9,9 +9,6 @@ SRC =	ft_printf.c ft_hex_upper.c ft_hex_lower.c ft_pointer.c ft_putnbr.c ft_putu
 
 FUN = $(SRC:.c=.o)
 
-%.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@
-
 all: $(NAME)
 
 $(NAME) : $(FUN)
