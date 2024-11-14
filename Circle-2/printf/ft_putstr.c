@@ -1,15 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aait-our <aait-our@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/14 00:52:00 by aait-our          #+#    #+#             */
+/*   Updated: 2024/11/14 01:03:32 by aait-our         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libftprintf.h"
 
-void ft_putstr(char *s, int *count)
+void	ft_putstr(char *s, int *count)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if(!s)
-        s = "(null)";
-    while (s[i])
-    {
-        ft_putchar(s[i], count);
-        i++;
-    }
+	i = 0;
+	if (!s)
+		s = "(null)";
+	while (s[i])
+	{
+		ft_putchar(s[i], count);
+		i++;
+	}
 }
