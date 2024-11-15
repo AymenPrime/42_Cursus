@@ -10,6 +10,9 @@ FUN = $(SRC:.c=.o)
 
 all: $(NAME)
 
+%.o: %.c
+	$(CC) $(FLAGS) -c $< -o $@
+
 $(NAME) : $(FUN)
 	ar rcs $(NAME) $(FUN)
 
