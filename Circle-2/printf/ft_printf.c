@@ -6,7 +6,7 @@
 /*   By: aait-our <aait-our@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 00:51:47 by aait-our          #+#    #+#             */
-/*   Updated: 2024/11/14 03:41:27 by aait-our         ###   ########.fr       */
+/*   Updated: 2024/11/15 19:49:51 by aait-our         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,16 +81,15 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
-// #include <stdio.h>
-// int main()
-// {		
-//     int dyali = ft_printf("%");
-// 	printf("\n");
-//     int dyalhom = printf("%");
-// 	printf("\n");
-	
-// 	printf("%d", dyali);
-// 	printf("\n");
-// 	printf("%d", dyalhom);
-// 	printf("\n");
-// }
+#include <stdio.h>
+int main()
+{		
+    int dyali = ft_printf("% %");
+	printf("\n");
+    int dyalhom = printf("% %");
+	printf("\n");
+	printf("%d", dyali);
+	printf("\n");
+	printf("%d", dyalhom);
+	printf("\n");
+}
