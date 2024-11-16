@@ -4,7 +4,7 @@ FLAGS = -Wall -Wextra -Werror
 
 NAME = libftprintf.a
 
-SRC =	ft_printf.c functions_one.c functions_two.c
+SRC =	ft_printf.c functions_1.c functions_2.c
 
 FUN = $(SRC:.c=.o)
 
