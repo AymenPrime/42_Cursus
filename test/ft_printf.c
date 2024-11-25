@@ -6,11 +6,11 @@
 /*   By: aait-our <aait-our@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 01:15:10 by aait-our          #+#    #+#             */
-/*   Updated: 2024/11/16 21:14:11 by aait-our         ###   ########.fr       */
+/*   Updated: 2024/11/17 14:49:03 by aait-our         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 void	ft_format(const char format, va_list args, int *count)
 {

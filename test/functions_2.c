@@ -6,11 +6,11 @@
 /*   By: aait-our <aait-our@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 01:16:05 by aait-our          #+#    #+#             */
-/*   Updated: 2024/11/16 01:16:09 by aait-our         ###   ########.fr       */
+/*   Updated: 2024/11/17 14:48:40 by aait-our         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 void	ft_hex_lower(unsigned long nb, int *count)
 {
