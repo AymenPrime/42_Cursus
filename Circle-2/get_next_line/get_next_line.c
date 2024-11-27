@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aait-our <aait-our@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 20:54:41 by aait-our          #+#    #+#             */
-/*   Updated: 2024/11/26 21:06:05 by aait-our         ###   ########.fr       */
+/*   Updated: 2024/11/27 20:11:57 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ char	*too_many_lines(int fd, char *container)
 			return (free(buffer), NULL);
 		if (ft_strchr(container, '\n'))
 			break ;
+		b_read = read(fd, buffer, BUFFER_SIZE);
 	}
 	free(buffer);
 	if (b_read < 0)
