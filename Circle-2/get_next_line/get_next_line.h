@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 23:37:06 by aait-our          #+#    #+#             */
-/*   Updated: 2024/11/27 19:58:02 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/27 20:46:59 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <unistd.h>
 
 char	*get_next_line(int fd);
-// char	*too_many_lines(int fd, char *container);
+char	*too_many_lines(int fd, char *container);
 char	*get_line(char *container);
 char	*move_to_next_line(char *container);
 int		ft_strlen(char *s);
