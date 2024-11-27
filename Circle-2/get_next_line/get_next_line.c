@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 20:54:41 by aait-our          #+#    #+#             */
-/*   Updated: 2024/11/27 20:45:55 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/27 20:47:36 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,27 +92,27 @@ char	*move_to_next_line(char *container)
 	return (container);
 }
 
-int main()
-{
-    int fd1 = open("te.txt", O_RDONLY);
-    int fd2 = open("aymen.txt", O_RDONLY);
-    char *line;
-    line = get_next_line(fd1);
-    while(line) {
-        printf("%s", line);
-        free(line);
-        line = get_next_line(fd1);
-    }
-    line = get_next_line(fd2);
-    while(line)
-    {
-        printf("%s", line);
-        free(line);
-        line = get_next_line(fd2);
-    }
-    close (fd1);
-    close (fd2);
-}
+// int main()
+// {
+//     int fd1 = open("te.txt", O_RDONLY);
+//     int fd2 = open("aymen.txt", O_RDONLY);
+//     char *line;
+//     line = get_next_line(fd1);
+//     while(line) {
+//         printf("%s", line);
+//         free(line);
+//         line = get_next_line(fd1);
+//     }
+//     line = get_next_line(fd2);
+//     while(line)
+//     {
+//         printf("%s", line);
+//         free(line);
+//         line = get_next_line(fd2);
+//     }
+//     close (fd1);
+//     close (fd2);
+// }
 // int main()
 // {
 //     int fd1 = open("te.txt", O_RDONLY);
